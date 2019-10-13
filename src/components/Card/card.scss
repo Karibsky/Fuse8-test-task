@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+$fontBold: 700;
+
+.card {
+	cursor: pointer;
+	margin: 10.5px 10.5px;
+	max-width:377px;
+	min-width: 300px;
+	flex:1;
+	height: auto;
+	background-color:#F8F8F8;
+	border:1px solid #D8D8D8;
+	img {
+		width:100%;
+		max-width: 377px;
+	}
+	&__label {
+		position: absolute;
+    top: -35px;
+    right: 0;
+    background-color: #006F79;
+    padding: 8px 11px 5px 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: $fontBold;
+		color: #fff;
+		&__overlay {
+			position: relative;
+			min-width: 300px;
+		}
+		&.orange {
+			background-color: #EC6608;
+		}
+	}
+	&__description {
+		margin: 0 0 0 20px;
+		color:#363636;
+		&__title {
+			font-size: 20px;
+			margin: 15px 0px 2px;
+		}
+		&__text-one, &__text-two {
+			font-size: 16px;
+			margin:0px 0px 15px;
+		}
+		&__text-small {
+			font-size:14px;
+			margin:0px 0px 15px;
+		}
+	}
+}

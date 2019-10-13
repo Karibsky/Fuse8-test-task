@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+$font: "Open Sans", sans-serif;
+$fontBold: 700;
+$fontLight: 400;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $font;
+	font-weight: $fontLight;
+}
+
+.page {
+	height: 100vh;
+	&__title {
+		color:#45852d;
+		font-family: $font;
+		font-weight: $fontBold;
+		font-size:36px;
+		text-align: center;
+		padding:50px 0px 36px;
+	}
+	&__container {
+		width: 100%;
+    max-width: 1180px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+	}
+	&__button {
+		margin: 39.5px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+		justify-content: center;
+		button {
+			border: 1px solid #D8D8D8;
+			background-color: #fff;
+			padding: 12px 33px;
+			border-radius: 40px;
+			font-family: $font;
+			font-weight: $fontBold;
+			outline: none;
+			font-size: 16px;
+			line-height: 24px;
+			.button__icon {
+				vertical-align: middle;
+				margin-left: 10px;
+			}
+		}
+	}
+}
