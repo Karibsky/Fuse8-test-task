@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Fuse8-test-task/precache-manifest.e81c4f025ea5af3c5ef121f21da9b7ba.js"
+  "/fuse8-test-task/precache-manifest.f1f7aeab150b03d010fe004e8a58bb22.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/Fuse8-test-task/index.html", {
+workbox.routing.registerNavigationRoute("/fuse8-test-task/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
